@@ -93,7 +93,13 @@ background-image: linear-gradient(120deg, #ecbb18, #086830);
 
 
 
-@media (max-width: 786px) {
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+
     .row-cols-3>* {
         flex: 0 0 auto;
         width: 100%;
@@ -105,3 +111,27 @@ background-image: linear-gradient(120deg, #ecbb18, #086830);
     }
 }
 
+
+
+@media only screen and (min-width: 768px) {
+    .row-cols-3>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .wrap{
+      
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .row-cols-3>* {
+        flex: 0 0 auto;
+        width: 33%;
+    }
+    .wrap{
+        flex-direction: row;
+    }
+}
